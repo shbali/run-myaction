@@ -16,6 +16,6 @@ jobs:
 
       - name: Run My Custom Action
         id: my-action
-        uses: ../my-custom-action
+        uses: ./my-custom-action
         with:
           message: 'Hello, custom action!'
