@@ -1,0 +1,14 @@
+# action.yml
+name: 'My Custom Action'
+description: 'A custom GitHub Action that prints a message'
+inputs:
+  message:
+    description: 'The message to print'
+    required: true
+outputs:
+  time:
+    description: 'The current time'
+runs:
+  using: 'node12'
+  main: 'action.js'
+
