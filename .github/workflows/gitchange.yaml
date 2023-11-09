@@ -17,7 +17,7 @@ jobs:
         id: list-updated-files
         run: |
           echo "Fetching updated files in the pull request..."
-          files=$(git diff-tree --no-commit-id --name-only -r ${{ github.event.pull_request.base.sha }})
+          files=$(git diff-tree --no-commit-id --name-only -r ${{ github.event.pull_request.base.ref }})
           echo "::set-output name=updated_files::$files"
 
       - name: Display Updated Files
